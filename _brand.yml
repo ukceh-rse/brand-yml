@@ -21,13 +21,31 @@ logo:
 
 color:
   palette:
+    # Logo colours
     blue: "#2f7ece"
     green: "#4da43a"
+    # Hero colour
     teal: "#0483a4"
+    # Primary palette
     charcoal: "#333333"
     light-grey: "#eaefec"
+    # Highlight colour
     orange: "#f49633"
-    #TODO: add extended colour palette from page 20 of brand book
+    # Extended palette
+    soil: "#8f7158"
+    silt: "#ffeace"
+    pale-green: "#90c164"
+    bright-green: "#37a635"
+    garden-green: "#00883c"
+    bottle-green: "#047e56"
+    dark-teal: "#007370"
+    ice-blue: "#c9e7f2"
+    pale-blue: "#34b8c7"
+    sky-blue: "#009dcb"
+    cornflower-blue: "#227fc1"
+    cobalt-blue: "#0a5da4"
+    dark-blue: "#00678e"
+    # NOTE: ommitted slight variants of teal & orange
 
   foreground: charcoal
   background: white
@@ -64,3 +82,4 @@ typography:
 
   link:
     color: orange
+
