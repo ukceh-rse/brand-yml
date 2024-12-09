@@ -1,6 +1,6 @@
 # _brand.yml
 
-This repository contains a `_brand.yml` configuration file defining colours, typography, and logos consistent with the UK Centre for Ecology & Hydrology branding guidelines.^[See the UKCEH 'brand book' in the Branding and design pages on Sharepoint.]
+This repository contains a `_brand.yml` configuration file defining colours, typography, and logos consistent with the UK Centre for Ecology & Hydrology branding guidelines.
 
 > [!IMPORTANT]
 > This is a work in progress and should be considered _unofficial_.
