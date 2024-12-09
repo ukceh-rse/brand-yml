@@ -14,10 +14,7 @@ meta:
     The UK Centre for Ecology & Hydrology (UKCEH) is a leading independent research institute dedicated to understanding and transforming how we interact with the natural world. With over 600 researchers, we tackle the urgent environmental challenges of our time, such as climate change and biodiversity loss. Our evidence-based insights empower governments, businesses, and communities to make informed decisions, shaping a future where both nature and people thrive.
 
 logo:
-  images:
-    logo: logos/logo.svg
-  medium:
-    light: logo
+  medium: logos/logo.svg
 
 color:
   palette:
