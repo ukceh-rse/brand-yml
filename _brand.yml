@@ -1,4 +1,6 @@
 # IMPORTANT: this is not an official UKCEH product
+#
+# See https://posit-dev.github.io/brand-yml/brand/ for reference
 
 meta:
   name:
@@ -6,10 +8,59 @@ meta:
     short: UKCEH
   link:
     home: https://www.ceh.ac.uk/
+    github: https://github.com/ukceh-rse/brand-yml
     linkedin: https://www.linkedin.com/company/uk-centre-for-ecology-hydrology/
+  description: |
+    The UK Centre for Ecology & Hydrology (UKCEH) is a leading independent research institute dedicated to understanding and transforming how we interact with the natural world. With over 600 researchers, we tackle the urgent environmental challenges of our time, such as climate change and biodiversity loss. Our evidence-based insights empower governments, businesses, and communities to make informed decisions, shaping a future where both nature and people thrive.
 
-#color:
+logo:
+  images:
+    logo: logos/logo.svg
+  medium:
+    light: logo
 
-#typography:
+color:
+  palette:
+    blue: "#2f7ece"
+    green: "#4da43a"
+    teal: "#0483a4"
+    charcoal: "#333333"
+    light-grey: "#eaefec"
+    orange: "#f49633"
+    #TODO: add extended colour palette from page 20 of brand book
 
-#logo:
+  foreground: charcoal
+  background: white
+  primary: blue
+  secondary: light-grey
+
+
+typography:
+  fonts:
+    - source: bunny
+      family: Lato
+      style: [normal, italic]
+      weight: 400
+
+    - source: bunny
+      family: Montserrat
+      style: normal
+      weight: 600
+
+    - source: bunny
+      family: Fira Code
+      style: normal
+      weight: 400
+
+  base: 
+    family: Lato
+
+  headings:
+    family: Montserrat
+    color: teal
+
+  monospace:
+    family: Fira Code
+
+  link:
+    color: orange
