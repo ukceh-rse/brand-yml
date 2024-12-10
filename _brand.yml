@@ -47,22 +47,21 @@ color:
   foreground: charcoal
   background: white
   primary: blue
-  secondary: light-grey
-
+  secondary: teal
 
 typography:
   fonts:
-    - source: bunny
+    - source: google
       family: Lato
       style: [normal, italic]
       weight: 400
 
-    - source: bunny
+    - source: google
       family: Montserrat
       style: normal
       weight: 600
 
-    - source: bunny
+    - source: google
       family: Fira Code
       style: normal
       weight: 400
@@ -76,7 +75,7 @@ typography:
 
   monospace:
     family: Fira Code
+    background-color: light-grey
 
   link:
-    color: orange
-
+    color: green

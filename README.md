@@ -26,15 +26,6 @@ In many cases it is sufficient to simply download `_brand.yml` and place it in t
 The [UKCEH Quarto templates](https://github.com/ukceh-rse/quarto-templates) _should_ source `_brand.yml`, and the logos contained here.
 However, I am so far not clear of the best way to do this.
 
-### Why Bunny Fonts instead of Google Fonts
-
-The UKCEH brand guidelines state that Lato and Montserrat, which are the two 'official' UKCEH fonts, "are Google typefaces".
-
-In fact neither were created by Google, and while they are distributed via [Google Fonts](https://fonts.google.com/) they can also be sourced from alternative repositories such as [Bunny Fonts](https://fonts.bunny.net/).
-
-It also turns out that [Google Fonts can lead to GDPR violations](https://www.theregister.com/2022/01/31/website_fine_google_fonts_gdpr/) since it collects the IP addresses of visitors to web-pages running Google Fonts.
-Meanwhile Bunny Fonts [does not collect any user data](https://fonts.bunny.net/faq).
-
 
 ## Inspiration
 
