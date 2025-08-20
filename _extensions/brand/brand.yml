@@ -16,10 +16,13 @@ meta:
 
 logo:
   images:
-    logo: logos/logo-light.svg
+    logo-light: logos/logo-light.svg
+    logo-dark: logos/logo-dark.svg
     icon: logos/icon.svg
   small: icon
-  medium: logo
+  medium:
+    light: logo-light
+    dark: logo-dark
 
 color:
   palette:
@@ -52,8 +55,12 @@ color:
     # The following are *not* in the official UKCEH palette 
     dark-slate-grey: "#2f4f4f"
 
-  foreground: charcoal
-  background: white
+  foreground: 
+    light: charcoal
+    dark: light-grey
+  background:
+    light: white
+    dark: charcoal
   primary: green
   secondary: blue
   tertiary: light-grey
@@ -86,12 +93,20 @@ typography:
     family: Fira Code
 
   monospace-inline:
-    color: charcoal
-    background-color: light-grey
+    color: 
+      light: charcoal
+      dark: light-grey
+    background-color: 
+      light: light-grey
+      dark: dark-slate-grey
   
   monospace-block:
-    color: charcoal
-    background-color: light-grey
+    color: 
+      light: charcoal
+      dark: light-grey
+    background-color: 
+      light: light-grey
+      dark: dark-slate-grey
 
   link:
     color: green
