@@ -35,6 +35,12 @@ If you're using version control, you will want to check in this directory.
 
 An alternative is to simply download the contents of `_extensions/brand/` and manually place them in your quarto project. Rename `brand.yml` -> `_brand.yml` so that it is picked up automatically.
 
+## Screenshots
+
+<img width="1314" height="891" alt="image" src="https://github.com/user-attachments/assets/1f501f7c-948b-4711-b698-3e8da5d6626b" />
+
+<img width="1314" height="891" alt="image" src="https://github.com/user-attachments/assets/fff93355-ba92-4afe-b66e-6c9de05f8eaa" />
+
 
 ## Looking for templates?
 
