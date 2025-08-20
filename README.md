@@ -27,6 +27,9 @@ quarto add ukceh-rse/brand-yml
 This will install the extension under the `_extensions` subdirectory.
 If you're using version control, you will want to check in this directory.
 
+> [!WARNING]
+> This will only work with Quarto version 1.8 or higher. As of 20/08/2025 this is still in pre-release, but it can be downloaded [here](https://prerelease.quarto.org/docs/download/prerelease.html).
+
 
 ### Without installing an extension
 
