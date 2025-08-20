@@ -1,6 +1,7 @@
 # IMPORTANT: this is not an official UKCEH product
 #
 # See https://posit-dev.github.io/brand-yml/brand/ for reference
+# See https://quarto.org/docs/authoring/brand.html for quarto-supported features
 
 meta:
   name:
@@ -8,13 +9,17 @@ meta:
     short: UKCEH
   link:
     home: https://www.ceh.ac.uk/
-    github: https://github.com/ukceh-rse/brand-yml
+    github: https://github.com/NERC-CEH
     linkedin: https://www.linkedin.com/company/uk-centre-for-ecology-hydrology/
   description: |
     The UK Centre for Ecology & Hydrology (UKCEH) is a leading independent research institute dedicated to understanding and transforming how we interact with the natural world. With over 600 researchers, we tackle the urgent environmental challenges of our time, such as climate change and biodiversity loss. Our evidence-based insights empower governments, businesses, and communities to make informed decisions, shaping a future where both nature and people thrive.
 
 logo:
-  medium: logos/logo.svg
+  images:
+    logo: logos/logo-light.svg
+    icon: logos/icon.svg
+  small: icon
+  medium: logo
 
 color:
   palette:
@@ -43,11 +48,15 @@ color:
     cobalt-blue: "#0a5da4"
     dark-blue: "#00678e"
     # NOTE: ommitted slight variants of teal & orange
+    
+    # The following are *not* in the official UKCEH palette 
+    dark-slate-grey: "#2f4f4f"
 
   foreground: charcoal
   background: white
-  primary: blue
-  secondary: teal
+  primary: green
+  secondary: blue
+  tertiary: light-grey
 
 typography:
   fonts:
@@ -75,7 +84,15 @@ typography:
 
   monospace:
     family: Fira Code
+
+  monospace-inline:
+    color: charcoal
+    background-color: light-grey
+  
+  monospace-block:
+    color: charcoal
     background-color: light-grey
 
   link:
     color: green
+    decoration: underline  # or "none"
