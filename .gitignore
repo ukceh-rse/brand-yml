@@ -1,5 +1,5 @@
 /.quarto/
 **/*.quarto_ipynb
 
-template.html
-template.pdf
+*.html
+*.pdf

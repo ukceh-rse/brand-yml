@@ -1,6 +1,5 @@
 ---
-title: Template Title
-subtitle: Template Subtitle
+title: UKCEH Brand
 author:
   name: Joe Marsh Rossney
   affiliation: UK Centre for Ecology & Hydrology
