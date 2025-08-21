@@ -18,8 +18,6 @@ However, the project is under active development and many things do not quite wo
 
 ## Usage
 
-### Apply to an existing project
-
 Run the following command in the root directory of your quarto project.
 
 ```bash
@@ -32,24 +30,49 @@ If you're using version control, you will want to check in this directory.
 > [!WARNING]
 > This will only work with Quarto version 1.8 or higher. As of 20/08/2025 this is still in pre-release, but it can be downloaded [here](https://prerelease.quarto.org/docs/download/prerelease.html).
 
-### As a starter template
-
-This extension also serves as a starter template for stand-alone documents of the following formats:
-
-- HTML
-- Typst (light and dark)
-- Revealjs
-
-To create a new project based on this template, run the following:
-
-```sh
-quarto user template ukceh-rse/brand-yml
-```
+> [!WARNING]
+> This will only work for _projects_, i.e. when there is a `_quarto.yml` file containing the `project` field.
+> However, there is no real downside to upgrading stand-alone documents to projects.
+> Simply create a `_quarto.yml` file with the following contents:
+> ```yaml
+> project:
+>   type: default
+> ```
 
 
 ### Without installing an extension
 
-An alternative is to simply download the contents of `_extensions/brand/` and manually place them in your quarto project. Rename `brand.yml` -> `_brand.yml` so that it is picked up automatically.
+An alternative is to simply download the contents of `_extensions/brand/` and manually place them in your quarto project. 
+
+Rename `brand.yml` -> `_brand.yml` so that it is picked up automatically. This will work for non-projects.
+
+
+### As a starter template
+
+This extension also serves as a starter template for stand-alone documents and presentations.
+
+To create a new project based on this template, run the following:
+
+```sh
+quarto use template ukceh-rse/brand-yml
+```
+
+There are currently 5 formats provided out of the box.
+
+- `html`
+- `typst`
+- `typst-dark`
+- `revealjs`
+- `revealjs-dark`
+
+You will need to specify the desired format when you render.
+
+```sh
+quarto render --to FORMAT
+```
+
+If you plan to render to multiple formats with the same file extension you will also need to specify an output file (`--output FILE`) so that they don't overwrite each other.
+
 
 ## Screenshots
 
