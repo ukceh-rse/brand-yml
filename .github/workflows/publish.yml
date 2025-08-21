@@ -47,7 +47,7 @@ jobs:
       - name: Upload static files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: output/
+          path: _output/
 
   deploy:
     runs-on: ubuntu-latest
