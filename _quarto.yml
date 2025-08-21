@@ -51,10 +51,14 @@ format-links:
   - html
   - format: typst
     text: Typst
+    icon: file-pdf
   - format: typst-dark
     text: Typst (dark)
+    icon: file-pdf-fill
   - format: revealjs
     text: Reveal.js
+    icon: file-slides
   - format: revealjs-dark
     text: Reveal.js (dark)
+    icon: file-slides-fill
 
