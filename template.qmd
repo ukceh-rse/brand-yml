@@ -1,5 +1,6 @@
 ---
-title: Example document
+title: Template Title
+subtitle: Template Subtitle
 author:
   name: Joe Marsh Rossney
   affiliation: UK Centre for Ecology & Hydrology
@@ -8,16 +9,8 @@ author:
 date: last-modified
 date-format: long
 abstract: |
-  This document serves to illustrate the UKCEH brand applied to a simple HTML document.
-  Try toggling between light and dark mode using the switch in the top-right corner.
-
-format:
-  html:
-    embed-resources: true
-    toc: true
-    toc-title: |
-      [{{< brand logo medium light >}}]{.light-content}[{{< brand logo medium dark >}}]{.dark-content}
-    toc-location: left
+  This template serves to illustrate the UKCEH brand applied to a range of document formats.
+bibliography: references.bib
 ---
 
 ## An h2 heading
@@ -32,6 +25,9 @@ Here we see the different levels of heading, from h2 down to h6.
 
 ###### An h6 heading
 
+::: {.content-visible when-format="html" unless-format="revealjs"}
+Try toggling between light and dark mode using the switch in the top-right corner!
+:::
 
 ## Different kinds of text
 
@@ -50,3 +46,15 @@ $$
 A = \pi r^2
 $$
 
+## Citations
+
+| Command | Citation |
+| --- | --- |
+| `@Bender2021` | @Bender2021 |
+| `[@Bender2021]` | [@Bender2021] |
+
+For presentations in particular, I recommend using footnotes to reference literature^[For example, [@Bender2021, page 3-5] ]
+
+## More information
+
+See [https://quarto.org/docs/guide/](https://quarto.org/docs/guide/).

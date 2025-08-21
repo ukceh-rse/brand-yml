@@ -18,6 +18,8 @@ However, the project is under active development and many things do not quite wo
 
 ## Usage
 
+### Apply to an existing project
+
 Run the following command in the root directory of your quarto project.
 
 ```bash
@@ -29,6 +31,20 @@ If you're using version control, you will want to check in this directory.
 
 > [!WARNING]
 > This will only work with Quarto version 1.8 or higher. As of 20/08/2025 this is still in pre-release, but it can be downloaded [here](https://prerelease.quarto.org/docs/download/prerelease.html).
+
+### As a starter template
+
+This extension also serves as a starter template for stand-alone documents of the following formats:
+
+- HTML
+- Typst (light and dark)
+- Revealjs
+
+To create a new project based on this template, run the following:
+
+```sh
+quarto user template ukceh-rse/brand-yml
+```
 
 
 ### Without installing an extension

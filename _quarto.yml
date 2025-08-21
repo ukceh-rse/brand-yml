@@ -1,3 +1,40 @@
 # currently a quarto project is required for metadata or brand extensions to work
 project:
   type: default
+
+format:
+
+  html:
+    format-links: false
+    toc: true
+    toc-title: |
+      [{{< brand logo medium light >}}]{.light-content}[{{< brand logo medium dark >}}]{.dark-content}
+    toc-location: left
+
+  typst:
+    brand-mode: light
+    logo: logo-light
+
+  typst+dark:
+    brand-mode: dark
+    logo: logo-dark
+
+  revealjs:
+    brand-mode: light
+    logo: logo-light
+    progress: true
+    show-slide-number: all
+    slide-number: c/t
+    smaller: true
+
+  revealjs+dark:
+    brand-mode: dark
+    logo: logo-dark
+    progress: true
+    show-slide-number: all
+    slide-number: c/t
+    smaller: true
+
+# Options applied to all applicable formats 
+embed-resources: true  # html, revealjs
+link-external-newwindow: true  # html, revealjs
