@@ -2,10 +2,6 @@
 
 This repository contains a `brand.yml` configuration defining colours, typography, and logos consistent with the UK Centre for Ecology & Hydrology branding guidelines.
 
-> [!IMPORTANT]
-> This is a work in progress and should be considered _unofficial_.
-
-
 ## About
 
 In the [`brand.yml` documentation](https://posit-dev.github.io/brand-yml/) Posit state that
