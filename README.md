@@ -2,6 +2,8 @@
 
 This repository contains a `brand.yml` configuration defining colours, typography, and logos consistent with the UK Centre for Ecology & Hydrology branding guidelines.
 
+To see the effect of the branding on a standard Quarto document (`template.qmd`), take a look at the [Pages site](https://ukceh-rse.github.io/brand-yml/).
+
 ## About
 
 In the [`brand.yml` documentation](https://posit-dev.github.io/brand-yml/) Posit state that
@@ -68,14 +70,6 @@ quarto render --to FORMAT
 ```
 
 If you plan to render to multiple formats with the same file extension you will also need to specify an output file (`--output FILE`) so that they don't overwrite each other.
-
-
-## Screenshots
-
-<img width="1314" height="891" alt="image" src="https://github.com/user-attachments/assets/1f501f7c-948b-4711-b698-3e8da5d6626b" />
-
-<img width="1314" height="891" alt="image" src="https://github.com/user-attachments/assets/fff93355-ba92-4afe-b66e-6c9de05f8eaa" />
-
 
 ## Looking for templates?
 
