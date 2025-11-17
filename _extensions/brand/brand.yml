@@ -19,7 +19,6 @@ logo:
     logo-light: logos/logo-light.png
     logo-dark: logos/logo-dark.png
     icon: logos/icon.png
-  small: icon
   medium:
     light: logo-light
     dark: logo-dark
