@@ -1,0 +1,123 @@
+# IMPORTANT: this is not an official UKCEH product
+#
+# See https://posit-dev.github.io/brand-yml/brand/ for reference
+# See https://quarto.org/docs/authoring/brand.html for quarto-supported features
+
+meta:
+  name:
+    full: UK Centre for Ecology & Hydrology
+    short: UKCEH
+  link:
+    home: https://www.ceh.ac.uk/
+    github: https://github.com/NERC-CEH
+    linkedin: https://www.linkedin.com/company/uk-centre-for-ecology-hydrology/
+  description: |
+    The UK Centre for Ecology & Hydrology (UKCEH) is a leading independent research institute dedicated to understanding and transforming how we interact with the natural world. With over 600 researchers, we tackle the urgent environmental challenges of our time, such as climate change and biodiversity loss. Our evidence-based insights empower governments, businesses, and communities to make informed decisions, shaping a future where both nature and people thrive.
+
+logo:
+  images:
+    logo-light: logos/logo-light.png
+    logo-dark: logos/logo-dark.png
+    icon: logos/icon.png
+  small: icon
+  medium:
+    light: logo-light
+    dark: logo-dark
+
+color:
+  palette:
+    black: "#000000"
+    white: "#FFFFFF"
+    air: "#D6EAE6"
+    water: "#477Ae2"
+    land: "#90A968"
+    earth: "#D7B7AA"
+    data: "#DBFE52"
+
+    # Tints (75%, 50%, 25% transparency)
+    # NOTE: don't seem to be working..?
+    air-75: "#BFD6EAE6"
+    water-75: "#BF477Ae2"
+    land-75: "#BF90A968"
+    earth-75: "#BFD7B7AA"
+    data-75: "#BFDBFE52"
+    air-50: "#80D6EAE6"
+    water-50: "#80477Ae2"
+    land-50: "#8090A968"
+    earth-50: "#80D7B7AA"
+    data-50: "#80DBFE52"
+    air-25: "#40D6EAE6"
+    water-25: "#40477Ae2"
+    land-25: "#4090A968"
+    earth-25: "#40D7B7AA"
+    data-25: "#40DBFE52"
+
+    # Code block backgrounds (not in official brand!)
+    charcoal: "#333333"
+    light-grey: "#eaefec"
+
+  # Text colour
+  foreground: 
+    light: black
+    dark: white
+  # Background colour
+  background:
+    light: white
+    dark: black
+  # Hyperlinks and active states
+  primary:
+    light: land
+    dark: data
+  # Block quotes and figure captions
+  secondary:
+    light: black
+    dark: white
+  # NOTE: more colours - see https://quarto.org/docs/authoring/brand.html#color
+
+typography:
+  fonts:
+    - source: google
+      family: Lato
+      style: [normal, italic]
+      weight: 400
+
+    - source: google
+      family: Montserrat
+      style: normal
+      weight: 600
+
+    - source: google
+      family: Fira Code
+      style: normal
+      weight: 400
+
+  base: 
+    family: Lato
+
+  headings:
+    family: Montserrat
+    color:
+      light: black
+      dark: white
+
+  monospace:
+    family: Fira Code
+
+  monospace-inline:
+    color: 
+      light: black
+      dark: white
+    background-color: 
+      light: light-grey
+      dark: charcoal
+  
+  monospace-block:
+    color: 
+      light: black
+      dark: white
+    background-color: 
+      light: light-grey
+      dark: charcoal
+
+  link:
+    decoration: underline  # or "none"

@@ -1,0 +1,150 @@
+---
+title: UKCEH Brand
+author:
+  name: Joe Marsh Rossney
+  affiliation: UK Centre for Ecology & Hydrology
+  email: joemar@ceh.ac.uk
+  orcid: 0000-0002-8082-8566
+date: last-modified
+date-format: long
+abstract: |
+  This template serves to illustrate the UKCEH brand applied to a range of document formats.
+bibliography: references.bib
+---
+
+:::: {.content-visible when-format="html" unless-format="revealjs"}
+:::{.callout-tip}
+Toggle between light and dark mode using the switch in the top-right corner.
+:::
+::::
+
+## Introduction
+
+{{< lipsum 1 >}}
+
+
+## Different kinds of text
+
+This sentence contains some _italicised text_, some **bold text**, some text that is **_both bold and italic_**, some `monospace text`, and finally some [linked text](https://github.com/ukceh-rse/brand-yml).
+
+Quarto supports extended markdown syntax including superscript^2^, subscript~2~ and ~~strikethrough~~.
+
+## Headings
+
+### Heading 3 (h3)
+
+#### Heading 4 (h4)
+
+##### Heading 5 (h5)
+
+###### Heading 6 (h6)
+
+Here we see the different levels of heading, from h2 down to h6.
+
+You can create interal links to headings. For example, the following links to the [Introduction section](#introduction).
+
+## Lists
+
+- First item
+- Second item
+  - Nested item
+
+1. First numbered item
+2. Second numbered item
+   a. Sub-item a
+   b. Sub-item b
+
+- [x] Completed task
+- [ ] Incomplete task
+
+## Code
+
+Now we have some inline code `print("hello there")`{.python} and a code block
+
+```python
+import math
+
+radius = 1.0
+area = math.pi * radius**2
+```
+
+## Maths
+
+Here is some inline math: $y = mx + c$.
+
+Here is some display math:
+
+$$
+A = \pi r^2
+$$
+
+
+## Tables
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+
+## Blocks
+
+### Blockquotes
+
+> This is a blockquote that includes various formatting elements like
+> **bold text** and *italic text*.
+
+### Definitions
+
+term
+: definition
+
+## Callouts
+
+::: {.callout-note}
+This is a note callout. Use it to highlight important information that readers should pay attention to.
+:::
+
+::: {.callout-warning}
+This is a warning callout. Use it to alert readers about potential issues or important considerations.
+:::
+
+::: {.callout-tip}
+This is a tip callout. Use it to provide helpful suggestions or best practices.
+:::
+
+::: {.callout-important}
+This is an important callout. Use it for critical information that must not be overlooked.
+:::
+
+::: {.callout-caution}
+This is a caution callout. Use it to warn about potential risks or problems.
+:::
+
+## Figures and Images
+
+::: {#fig-placeholder}
+![]({{< placeholder 600 400 format=png >}})
+
+This is a placeholder for an image that would showcase how the brand theming affects figure styling. In a real document, you would include actual images here.
+:::
+
+## Citations
+
+By default, this template uses the APA citation style.
+
+| Command | Citation |
+| --- | --- |
+| `@Bender2021` | @Bender2021 |
+| `[@Bender2021]` | [@Bender2021] |
+
+For presentations in particular, I recommend using footnotes to reference literature^[For example, [@Bender2021, page 3-5]. ].
+
+
+## More information
+
+- [Quarto guide](https://quarto.org/docs/guide/).
+- [Quarto markdown reference](https://quarto.org/docs/authoring/markdown-basics.html).
+
+
+## References
