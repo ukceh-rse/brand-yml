@@ -1,0 +1,64 @@
+on:
+  workflow_dispatch:
+  push:
+    branches: main
+
+name: Quarto Publish
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: pre-release
+
+      - name: Render html
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+
+      - name: Render typst
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: typst
+
+      - name: Render typst-dark
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: typst-dark
+
+      - name: Render revealjs
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: revealjs
+
+      - name: Render revealjs-dark
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: revealjs-dark
+
+      - name: Upload static files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _output/
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
